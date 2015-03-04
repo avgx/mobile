@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Demos</title>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.11.2.js"></script>
+    <script src="json2.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <script>
+    $(document).ready(function(){
+    
+    function updateEvents() {
+      $.getJSON("my.json", function(data){
+        var j = data;//JSON.parse(data);
+        $("#listview").html('');
+        var now = new Date();
+        var list = '<li data-role="list-divider">' + now.toLocaleString() + ' <span class="ui-li-count">'+ j.length +'</span></li>';
+        for(var i = 0; i < j.length; i++) {
+          var o = j[i];
+          //console.log(o);
+          var date = new Date(o.ts);
+          //console.log(date);
+          var desc = o.description;
+          //console.log(desc);
+          var objId = o.objectId;
+          //console.log(objId);
+          list += '<li>';
+          list += '<h2>' + desc + '</h2>';
+          list += '<p>' + objId + '</p>';
+          list += '<p class="ui-li-aside"><strong>' + date.toLocaleString() + '</strong></p>';
+          list += '</li>';
+        }
+        var ul = '<ul id="listview" data-role="listview" data-inset="true">';
+        ul += list;
+        ul += '</ul>';
+        //$("#listview").html(list);
+        $('div#dialogpage').html(ul);
+        $("div#dialogpage ul").listview();
+        
+              setTimeout(updateEvents, 5000);
+      });
+      }
+      updateEvents();
+    });
+  </script>
+</head>
+<body>
+<div data-role="page" data-theme="a" id="dialogpage">
+    <!--ul id="listview" data-role="listview" data-inset="true">
+      <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+      <li>
+      <h2>Stephen Weber</h2>
+      <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+      <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+      </li>
+    </ul-->
+</div>
+</body>
+</html>
