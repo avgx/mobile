@@ -19,7 +19,7 @@
         var list = '<li data-role="list-divider">' + now.toLocaleString() + ' <span>('+ j.length +')</span></li>';
         for(var i = 0; i < j.length; i++) {
           var o = j[i];
-          var date = new Date(o.ts);
+          var date = new Date(Date.parse(o.ts));
           var desc = o.description;
           var objId = o.objectId;
           list += '<li>';
