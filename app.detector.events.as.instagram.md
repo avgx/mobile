@@ -7,12 +7,11 @@ UI similar to instagram.
 * Search/Filter by camera
 * Detail view with hi resolution snapshot
 
-### Coding Spec:
+## Coding Spec:
 * create prototype with screens and navigation between them.
 * create network layer to fetch the feed and all other things the will be required.
-* create tests
+* create unit tests
 * create app
-* create ui tests
 
 ### Details:
 Data fetch API: 
