@@ -26,12 +26,12 @@ user: root
 password: root
 
 ### For iOS version of the app please show usage of:
-Swift
-[SnapKit](https://github.com/SnapKit/SnapKit)
-[Alamofire](https://github.com/Alamofire/Alamofire)
-[RxSwift](https://github.com/ReactiveX/RxSwift)
+* Swift
+* [SnapKit](https://github.com/SnapKit/SnapKit)
+* [Alamofire](https://github.com/Alamofire/Alamofire)
+* [RxSwift](https://github.com/ReactiveX/RxSwift)
 
 ### For Android version of the app please show usage of:
-Kotlin
-[retrofit](https://github.com/square/retrofit)
-[RxJava](https://github.com/ReactiveX/RxJava)
+* Kotlin
+* [retrofit](https://github.com/square/retrofit)
+* [RxJava](https://github.com/ReactiveX/RxJava)
