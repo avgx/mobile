@@ -15,10 +15,10 @@ UI similar to instagram.
 
 ### Details:
 Data fetch API: 
-* [version](https://doc.axxonsoft.com/confluence/display/next45en/Get+info+about+Server+version),
-* [events](https://doc.axxonsoft.com/confluence/display/next45en/Get+list+of+detection+tools+events), 
-* [cameras](https://doc.axxonsoft.com/confluence/pages/viewpage.action?pageId=184378390),
-* [frames/snapshots](https://doc.axxonsoft.com/confluence/display/next45en/Review+video+footage+by+frame)
+* [version](https://docs.axxonsoft.com/confluence/display/one1en/Get+info+about+Server+version),
+* [events](https://docs.axxonsoft.com/confluence/display/one1en/Get+list+of+detection+tools+events), 
+* [cameras](https://docs.axxonsoft.com/confluence/display/one1en/Get+list+of+video+cameras+and+information+about+them),
+* [frames/snapshots](https://docs.axxonsoft.com/confluence/display/one1en/Review+video+footage+by+frame)
 
 ### For test use demo server:
 url: http://try.axxonsoft.com:8000/asip-api
