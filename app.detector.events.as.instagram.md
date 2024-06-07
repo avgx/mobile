@@ -37,5 +37,4 @@ or
 
 ### For Android version of the app please show usage of:
 * Kotlin
-* [retrofit](https://github.com/square/retrofit)
-* [RxJava](https://github.com/ReactiveX/RxJava)
+* Сoroutines
